@@ -1,80 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 .wrap {
-  perspective: 800px;
-  perspective-origin: 50% 100px;
+  perspective: 1024px;
+  perspective-origin: 50% 128px;
 }
 
 .cube {
   position: relative;
-  width: 200px;
+  width: 256px;
   transform-style: preserve-3d;
-  margin: 100px auto;
+  margin: 128px auto;
 }
 
 .cube div {
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 256px;
+  height: 256px;
+  color: rgba(60, 208, 6, 1);
 
-  /* color: rgba(0, 0, 0, 0.5);
+  /* color: rgba(118, 16, 136, 0.5); */
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0 0 30px rgba(125, 125, 125, 0.8); */
-  font-size: 20px;
+  box-shadow: inset 0 0 30px rgba(255, 0, 255, 0.8);
+
+  /* color: rgba(38, 160, 212, 0.5);
+  background: rgba(38, 160, 212, 0.1);
+  box-shadow: inset 0 0 30px rgba(38, 160, 212, 0.8); */
   text-align: center;
-  line-height: 200px;
+  line-height: 256px;
+  font-size: 180px;
   font-family: sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
 .back {
-  color: rgba(128, 0, 0, 0.5);
-  background: rgba(255, 0, 0, 0.1); /* red */
-  box-shadow: inset 0 0 30px rgba(0, 0, 255, 0.6); /* blue */
-  transform: translateZ(-100px) rotateY(180deg);
+  /* color: rgba(128, 0, 0, 0.5);
+  background: rgba(255, 0, 0, 0.1);
+  box-shadow: inset 0 0 30px rgba(0, 0, 255, 0.6); */
+  transform: translateZ(-128px) rotateY(180deg);
 
-  /* transform: translateZ(-100px) rotateX(180deg); */
+  /* transform: translateZ(-128px) rotateX(180deg); */
 }
 
 .right {
-  color: rgba(128, 0, 0, 0.5);
-  background: rgba(255, 0, 0, 0.1); /* red */
-  box-shadow: inset 0 0 30px rgba(0, 0, 255, 0.6); /* blue */
-  transform: rotateY(-270deg) translateX(100px);
+  /* color: rgba(128, 0, 0, 0.5);
+  background: rgba(255, 0, 0, 0.1);
+  box-shadow: inset 0 0 30px rgba(0, 0, 255, 0.6); */
+  transform: rotateY(-270deg) translateX(128px);
   transform-origin: top right;
 }
 
 .left {
-  color: rgba(128, 0, 0, 0.5);
-  background: rgba(255, 0, 0, 0.1); /* red */
-  box-shadow: inset 0 0 30px rgba(0, 0, 255, 0.6); /* blue */
-  transform: rotateY(270deg) translateX(-100px);
+  /* color: rgba(128, 0, 0, 0.5);
+  background: rgba(255, 0, 0, 0.1);
+  box-shadow: inset 0 0 30px rgba(0, 0, 255, 0.6); */
+  transform: rotateY(270deg) translateX(-128px);
   transform-origin: center left;
 }
 
 .top {
-  color: rgba(128, 0, 0, 0.5);
-  background: rgba(255, 0, 0, 0.1); /* red */
-  box-shadow: inset 0 0 30px rgba(0, 0, 255, 0.6); /* blue */
+  /* color: rgba(128, 0, 0, 0.5);
+  background: rgba(255, 0, 0, 0.1);
+  box-shadow: inset 0 0 30px rgba(0, 0, 255, 0.6); */
 
-  /* transform: rotateX(-90deg) translateY(-100px); */
-  transform: rotateX(-270deg) translateY(-100px);
+  /* transform: rotateX(-90deg) translateY(-128px); */
+  transform: rotateX(-270deg) translateY(-128px);
   transform-origin: top center;
 }
 
 .bottom {
-  color: rgba(128, 0, 0, 0.5);
-  background: rgba(255, 0, 0, 0.1); /* red */
-  box-shadow: inset 0 0 30px rgba(0, 0, 255, 0.6); /* blue */
+  /* color: rgba(128, 0, 0, 0.5);
+  background: rgba(255, 0, 0, 0.1);
+  box-shadow: inset 0 0 30px rgba(0, 0, 255, 0.6); */
 
-  /* transform: rotateX(90deg) translateY(100px); */
-  transform: rotateX(-90deg) translateY(100px);
+  /* transform: rotateX(90deg) translateY(128px); */
+  transform: rotateX(-90deg) translateY(128px);
   transform-origin: bottom center;
 }
 
 .front {
-  color: rgba(128, 0, 0, 0.5);
-  background: rgba(255, 0, 0, 0.1); /* red */
-  box-shadow: inset 0 0 30px rgba(0, 0, 255, 0.6); /* blue */
-  transform: translateZ(100px);
+  /* color: rgba(128, 0, 0, 0.5);
+  background: rgba(255, 0, 0, 0.1);
+  box-shadow: inset 0 0 30px rgba(0, 0, 255, 0.6); */
+  transform: translateZ(128px);
 }
 
 @keyframes spin {
@@ -106,6 +114,6 @@
 } */
 
 .cube {
-  transform-origin: 100px 100px;
+  transform-origin: 128px 128px;
   animation: spin 20s infinite linear;
 }
