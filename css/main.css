@@ -1,19 +1,32 @@
 /* @import url('https://fonts.googleapis.com/css?family=Raleway'); */
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: black;
+}
+
+.flex {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .wrap {
   perspective: 800px;
   perspective-origin: 50% 100px;
+  margin: -200px auto 0;
 }
 
 .cube {
   position: relative;
   width: 200px;
   transform-style: preserve-3d;
-  margin: 100px auto;
 }
 
 .cube div {
