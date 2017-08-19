@@ -20,7 +20,8 @@ body {
 .wrap {
   perspective: 800px;
   perspective-origin: 50% 100px;
-  margin: -200px auto 0;
+  height: 200px;
+  margin: auto;
 }
 
 .cube {
