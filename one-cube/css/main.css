@@ -1,0 +1,139 @@
+/* @import url('https://fonts.googleapis.com/css?family=Raleway'); */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.flex {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.wrap {
+  perspective: 800px;
+  perspective-origin: 50% 100px;
+  height: 200px;
+  margin: auto;
+}
+
+.cube {
+  position: relative;
+  width: 200px;
+  transform-style: preserve-3d;
+}
+
+.cube div {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  color: rgba(60, 208, 6, 1);
+
+  /* color: rgba(118, 16, 136, 0.5); */
+
+  /* background: rgba(255, 255, 255, 0.2); */
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 30px rgba(255, 0, 255, 0.8);
+
+  /* color: rgba(38, 160, 212, 0.5);
+  background: rgba(38, 160, 212, 0.1);
+  box-shadow: inset 0 0 30px rgba(38, 160, 212, 0.8); */
+  text-align: center;
+  line-height: 200px;
+  font-size: 140px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.back {
+  /* color: rgba(100px, 0, 0, 0.5);
+  background: rgba(255, 0, 0, 0.1);
+  box-shadow: inset 0 0 30px rgba(0, 0, 255, 0.6); */
+  transform: translateZ(-100px) rotateY(180deg);
+
+  /* transform: translateZ(-100px) rotateX(180deg); */
+}
+
+.right {
+  /* color: rgba(100px, 0, 0, 0.5);
+  background: rgba(255, 0, 0, 0.1);
+  box-shadow: inset 0 0 30px rgba(0, 0, 255, 0.6); */
+  transform: rotateY(-270deg) translateX(100px);
+  transform-origin: top right;
+}
+
+.left {
+  /* color: rgba(100px, 0, 0, 0.5);
+  background: rgba(255, 0, 0, 0.1);
+  box-shadow: inset 0 0 30px rgba(0, 0, 255, 0.6); */
+  transform: rotateY(270deg) translateX(-100px);
+  transform-origin: center left;
+}
+
+.top {
+  /* color: rgba(100px, 0, 0, 0.5);
+  background: rgba(255, 0, 0, 0.1);
+  box-shadow: inset 0 0 30px rgba(0, 0, 255, 0.6); */
+
+  /* transform: rotateX(-90deg) translateY(-100px); */
+  transform: rotateX(-270deg) translateY(-100px);
+  transform-origin: top center;
+}
+
+.bottom {
+  /* color: rgba(100px, 0, 0, 0.5);
+  background: rgba(255, 0, 0, 0.1);
+  box-shadow: inset 0 0 30px rgba(0, 0, 255, 0.6); */
+
+  /* transform: rotateX(90deg) translateY(100px); */
+  transform: rotateX(-90deg) translateY(100px);
+  transform-origin: bottom center;
+}
+
+.front {
+  /* color: rgba(100px, 0, 0, 0.5);
+  background: rgba(255, 0, 0, 0.1);
+  box-shadow: inset 0 0 30px rgba(0, 0, 255, 0.6); */
+  transform: translateZ(100px);
+}
+
+@keyframes spin {
+  /* from { transform: rotateY(0) rotateX(0) rotateZ(0); }
+  to { transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg); } */
+
+  from { transform: rotateX(0) rotateZ(0); }
+  to { transform: rotateX(360deg) rotateZ(360deg); }
+
+  /* from { transform: rotateZ(0) rotateX(0); }
+  to { transform: rotateZ(360deg) rotateX(360deg); } */
+
+  /* from { transform: rotateX(0); }
+  to { transform: rotateX(360deg); } */
+
+  /* from { transform: rotateX(0) rotateY(0); }
+  to { transform: rotateX(360deg) rotateY(360deg); } */
+
+  /* from { transform: rotateX(0); }
+  to { transform: rotateX(360deg); } */
+
+  /* from { transform: rotateY(0); }
+  to { transform: rotateY(360deg); } */
+}
+
+/* @keyframes spin-z {
+  from { transform: rotateZ(0); }
+  to { transform: rotateZ(360deg); }
+} */
+
+.cube {
+  transform-origin: 100px 100px;
+  animation: spin 20s infinite linear;
+}
