@@ -64,8 +64,8 @@ body {
 }
 
 @keyframes spin {
-  from { transform: rotateX(0) rotateZ(0); }
-  to { transform: rotateX(360deg) rotateZ(360deg); }
+  from { transform: rotate3d(1, 1, 1, 0deg); }
+  to { transform: rotate3d(1, 1, 1, 360deg); }
 }
 
 .cube {
