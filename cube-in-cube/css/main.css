@@ -26,12 +26,8 @@ body {
 
 .cube div {
   position: absolute;
-  top: 0;
-  left: 0;
   background: rgba(255, 255, 255, 0);
   text-align: center;
-  line-height: 200px;
-  font-size: 40px;
   font-family: sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -42,51 +38,17 @@ body {
   color: rgba(60, 208, 6, 1);
   width: 200px;
   height: 200px;
+  font-size: 140px;
+  line-height: 200px;
 }
 
 .side.inner {
   box-shadow: inset 0 0 30px rgba(60, 208, 6, 0.8);
   color: rgba(255, 0, 255, 1);
-  width: 180px;
-  height: 180px;
-}
-
-.line.outer {
-  width: 200px;
-  height: 3px;
-  color: rgba(0, 0, 0, 0);
-  background-color: rgba(60, 208, 6, 0);
-}
-
-.line.inner {
-  width: 180px;
-  height: 180px;
-  color: rgba(0, 0, 0, 0);
-  background-color: rgba(255, 0, 255, 0);
-}
-
-/* .line.front.inner {
-  transform: translateX(10px) translateY(88px) translateZ(90px);
-} */
-
-.line.back.inner {
-  transform: translateX(10px) translateY(88px) rotateY(180deg) translateZ(90px);
-}
-
-.line.right.inner {
-  transform: translateX(10px) translateY(88px) rotateY(90deg) translateZ(90px);
-}
-
-.line.left.inner {
-  transform: translateX(10px) translateY(88px) rotateY(-90deg) translateZ(90px);
-}
-
-.line.top.inner {
-  transform: translateX(10px) translateY(88px) rotateX(90deg) translateZ(80px);
-}
-
-.line.bottom.inner {
-  transform: translateX(10px) translateY(88px) rotateX(-90deg) translateZ(100px);
+  width: 100px;
+  height: 100px;
+  font-size: 70px;
+  line-height: 100px;
 }
 
 .side.front.outer {
@@ -94,91 +56,55 @@ body {
 }
 
 .side.back.outer {
-  color: rgba(0, 0, 0, 0);
-  background-color: rgba(255, 0, 255, 0);
   transform: rotateY(180deg) translateZ(100px);
 }
 
 .side.right.outer {
-  color: rgba(0, 0, 0, 0);
-  background-color: rgba(255, 0, 255, 0);
   transform: rotateY(90deg) translateZ(100px);
 }
 
 .side.left.outer {
-  color: rgba(0, 0, 0, 0);
-  background-color: rgba(255, 0, 255, 0);
   transform: rotateY(-90deg) translateZ(100px);
 }
 
 .side.top.outer {
-  color: rgba(0, 0, 0, 0);
-  background-color: rgba(255, 0, 255, 0);
   transform: rotateX(90deg) translateZ(100px);
 }
 
 .side.bottom.outer {
-  color: rgba(0, 0, 0, 0);
-  background-color: rgba(255, 0, 255, 0);
   transform: rotateX(-90deg) translateZ(100px);
 }
 
-/* .side.front.inner {
-  transform: translateX(10px) translateY(10px) translateZ(90px);
-} */
-
-@keyframes sideFrontInner {
-  0% { transform: translateX(0) translateY(0) translateZ(0); }
-  50% { transform: translateZ(90px); }
-  100% { transform: translateX(10px) translateY(10px) translateZ(90px); } */
-}
-
 .side.front.inner {
-  transform-origin: 50% 50%;
-  animation: sideFrontInner 20s 1 linear forwards;
+  transform: translateX(50px) translateY(50px) translateZ(50px);
 }
 
 .side.back.inner {
-  color: rgba(0, 0, 0, 0);
-  background-color: rgba(255, 0, 255, 0);
-  transform: translateX(10px) translateY(10px) rotateY(180deg) translateZ(90px);
+  transform: translateX(50px) translateY(50px) rotateY(180deg) translateZ(50px);
 }
 
 .side.right.inner {
-  color: rgba(0, 0, 0, 0);
-  background-color: rgba(255, 0, 255, 0);
-  transform: translateX(10px) translateY(10px) rotateY(90deg) translateZ(90px);
+  transform: translateX(50px) translateY(50px) rotateY(90deg) translateZ(50px);
 }
 
 .side.left.inner {
-  color: rgba(0, 0, 0, 0);
-  background-color: rgba(255, 0, 255, 0);
-  transform: translateX(10px) translateY(10px) rotateY(-90deg) translateZ(90px);
+  transform: translateX(50px) translateY(50px) rotateY(-90deg) translateZ(50px);
 }
 
 .side.top.inner {
-  color: rgba(0, 0, 0, 0);
-  background-color: rgba(255, 0, 255, 0);
-  transform: translateX(10px) translateY(10px) rotateX(90deg) translateZ(90px);
+  transform: translateX(50px) translateY(50px) rotateX(90deg) translateZ(50px);
 }
 
 .side.bottom.inner {
-  color: rgba(0, 0, 0, 0);
-  background-color: rgba(255, 0, 255, 0);
-  transform: translateX(10px) translateY(10px) rotateX(-90deg) translateZ(90px);
-}
-
-/* .cube {
-  transform: rotate3d(1, 1, 1, 25deg);
+  transform: translateX(50px) translateY(50px) rotateX(-90deg) translateZ(50px);
 }
 
 @keyframes spin {
   from { transform: rotate3d(1, 1, 1, 0deg); }
   to { transform: rotate3d(1, 1, 1, 360deg); }
-} */
+}
 
 .cube {
   transform-origin: 100px 100px;
-
-  /* animation: spin 20s infinite linear; */
+  animation: spin 20s infinite linear;
 }
