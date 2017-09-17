@@ -34,7 +34,7 @@ body {
 
 .cube div {
   position: absolute;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.1);
 
   /* background: rgba(255, 255, 255, 0); */
   text-align: center;
@@ -116,15 +116,15 @@ body {
 
 .cube.outer {
   transform-origin: 100px 100px;
-  animation: spinOuter 20s infinite linear;
+  animation: spinOuter 30s infinite linear;
 }
 
 @keyframes spinInner {
-  from { transform: rotate3d(1, -1, -1, 0deg); }
-  to { transform: rotate3d(1, -1, -1, 360deg); }
+  from { transform: rotate3d(1, 1, 1, 0deg); }
+  to { transform: rotate3d(1, 1, 1, 360deg); }
 }
 
 .cube.inner {
   transform-origin: 50px 50px;
-  animation: spinInner 20s infinite linear;
+  animation: spinInner 30s infinite linear;
 }
