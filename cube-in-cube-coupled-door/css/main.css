@@ -72,9 +72,9 @@ body {
   transform: rotateY(180deg) translateZ(100px);
 }
 
-.side.right.outer {
+/* .side.right.outer {
   transform: rotateY(90deg) translateZ(100px);
-}
+} */
 
 .side.left.outer {
   transform: rotateY(-90deg) translateZ(100px);
@@ -124,7 +124,10 @@ body {
 
 @keyframes spinInner {
   0% { transform: translateX(0) rotate3d(1, 1, 1, 0deg); }
-  50% { transform: translateX(220px) rotate3d(1, 1, 1, 180deg); }
+  5% { transform: translateX(0) rotate3d(1, 1, 1, 18deg); }
+  35% { transform: translateX(220px) rotate3d(1, 1, 1, 126deg); }
+  65% { transform: translateX(220px) rotate3d(1, 1, 1, 234deg); }
+  95% { transform: translateX(0) rotate3d(1, 1, 1, 342deg); }
   100% { transform: translateX(0) rotate3d(1, 1, 1, 360deg); }
 }
 
@@ -135,8 +138,10 @@ body {
 
 @keyframes openDoor {
   0% { transform: translateZ(-100px) rotateY(90deg); }
+  5% { transform: translateZ(-100px) rotateY(90deg); }
   20% { transform: translateZ(-100px) rotateY(180deg); }
   80% { transform: translateZ(-100px) rotateY(180deg); }
+  95% { transform: translateZ(-100px) rotateY(90deg); }
   100% { transform: translateZ(-100px) rotateY(90deg); }
 }
 
