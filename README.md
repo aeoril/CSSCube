@@ -1,6 +1,6 @@
 ### CSS Cube Examples
 
-Click the links below to see CSS Cube Animations
+Click the links below to see various CSS Cube Animations
 
 [one-cube][one-cube]  
 [cube-in-cube][cube-in-cube]  
