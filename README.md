@@ -16,6 +16,8 @@ do rotating cubes and other animations using HTML and CSS.
 
 Thanks so much, David Walsh!
 
+![Screenshot](./screenshot.png)
+
 [one-cube]: https://xitalogy.github.io/css-cube/one-cube/
 [cube-in-cube]: https://xitalogy.github.io/css-cube/cube-in-cube/
 [cube-in-cube-coupled]: https://xitalogy.github.io/css-cube/cube-in-cube-coupled/
